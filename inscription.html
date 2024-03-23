@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="inscription.css">
+    <title>Inscription Page</title>
+</head>
+<body>
+    <h1 class="fond">Page d'inscription</h1>
+    <p class="fond">Pour une meilleure expérience, veuillez remplir ce formulaire:</p>
+    <form class="fond" action="inscription.php" method="POST">
+        <fieldset>
+            <label for="nom">Nom:<input class="inline" type="text" id="nom" name="nom" placeholder="Ecrire le Nom"/></label>
+            <label for="prenom">Prénom:<input class="inline" type="text" id="prenom" name="prenom" placeholder="Ecrire le Prénom"/></label>
+            <label for="phone">Téléphone:<input class="inline" type="text" id="phone" name="phone" placeholder="Ecrire le num de Télépone"/></label>
+            <label for="adress">Adresse(Cartier):<input class="inline" type="text" id="adress" name="adress" placeholder="Ecrire votre Adress"/></label>
+            <label for="email">Email:<input class="inline" type="email" id="email" name="email" placeholder="Ecrire votre Email"/></label>
+            <label for="password">Mots de pass:<input class="inline" type="text" id="password" name="password" placeholder="Ecrire un mots de pass"/></label>
+        </fieldset>
+        <fieldset>
+            <legend>Comment avez-vous entendu parler de nous?</legend>
+            <label for="scmedia"><input type="radio" id="scmedia" name="scmedia" class="align"/>Resaux-sociaux</label>
+            <label for="entourage"><input type="radio" id="entourage" name="entourage" class="align"/>Entourage</label>
+            <label for="reachgoogle"><input type="radio" id="reachgoogle" name="reachgoogle" class="align"/>Moteur de recherche Google</label>
+            <label for="other"><input type="radio" id="other" name="other" class="align"/>Autre</label><textarea name="other" id="other" cols="15" rows="5" placeholder="Indiquer ici..."></textarea>
+        </fieldset>
+        <input type="button" value="Envoyer" name="OK"/>
+    </form>
+</body>
+</html>
