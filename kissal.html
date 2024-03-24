@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accueil</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.css" />
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script src="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.js"></script>
+    <style>
+        #map {
+            height: 100%;
+        }
+    </style>
+    <link rel="stylesheet" href="kisssal.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>KISSAL</h1>
+        <nav>
+            <ul>
+                <li><a href="kisssal.html">Accueil</a></li>
+                <li><a href="#">Profile</a></li>
+                <li><a href="#">Zone de Risk au Quotidien</a></li>
+                <li><a href="#">À propos</a></li>
+                <li><a href="#">Conseil</a></li>
+                <li><a href="#">Sign up</a></li>
+                <li><a href="#">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="map">
+            <!-- Carte interactive des Zones de risk en temps reel -->
+            <div id="map"></div>
+        </section>
+
+        <section class="alerts">
+            <div class="carousel-container">
+                <div class="carousel-slide">
+                    <img src="images/Greve1.jpg" alt="Image 1" width="100%" height="50%">
+                    <img src="images/Greve2.jpg" alt="Image 2" width="100%" height="50%">
+                    <img src="images/Greve3.jpg" alt="Image 3" width="100%" height="50%">
+                </div>
+                <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+                <button class="next" onclick="moveSlide(1)">&#10095;</button>
+            </div>
+            <div class="alerts">
+                <!-- Liste des alertes -->
+                <h2>Alertes en cours</h2>
+                <ul>
+                    <li>Alerte Manifestation - Wanindara Ratoma</li>
+                    <li>Alerte Embouteillage - Coza </li>
+                    <li>Alerte Traveaux Public - Bambeto</li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 KISSAL. Tous droits réservés.</p>
+    </footer>
+
+    <script src="kisssal.js"></script>
+
+</body>
+
+</html>
