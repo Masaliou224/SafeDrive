@@ -1,0 +1,163 @@
+/* Style général */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Conteneur principal */
+.container {
+  width: 100%;
+  margin: 0 auto;
+}
+
+/* Photo de couverture */
+header {
+  position: relative;
+  background-color: #ccc;
+  padding: 10px;
+  text-align: center;
+  height: 224px;
+  background-image: url();
+  background-repeat: repeat-x;
+  background-size: 406px;
+}
+
+
+/* Section principale */
+main {
+  display: flex;
+}
+
+/* Section gauche */
+.left-section {
+  position: absolute;
+  top: 160px;
+  left: 0;
+  z-index: 1;
+  width: 30%;
+  padding: 10px;
+}
+
+.containerPP {
+  display: inline-block;
+  justify-content: center;
+  align-items: center;
+}
+
+ /* Photo de profil */
+ #profile-picture {
+  display: inline-block;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  margin-left: 50px;
+  margin-top: 100px;
+}
+
+/* Section droite */
+.right-section {
+  position: absolute;
+  width: 70%;
+  height: 350px;
+  margin-left: 30%;
+}
+
+/* Informations personnelles - structure */
+
+.profil-info {
+  display: flex;
+  flex-direction: row; 
+  gap: 136px; 
+  margin-top: 40px;
+  align-items: center; 
+  justify-content: center; 
+}
+
+.profil-info h2 {
+  font-size: 1.2rem;
+}
+
+.profil-info button {
+  background-color: #eceaea;
+  color: #000;
+  height: 34px;
+  width: 240px;
+  border-radius: 2px;
+  border-style: none;
+  font-weight: 500;
+}
+
+.right-section h1{
+  margin-bottom: 20px;
+  margin-top: 2px;
+  font-size: 2.5rem;
+}
+
+.right-section h2 {
+  margin-bottom: 4px;
+  margin-right: 147px;
+}
+
+.right-section h3 {
+  font-size: 1.0rem;
+  margin-bottom: 4px;
+  margin-right: 204px;
+}
+
+/* Message Container */
+.message-container {
+display: flex;
+flex-direction: column;
+width: 700px;
+margin: 0 auto;
+padding: 20px;
+align-items: center;
+margin-top: 100px;
+}
+
+.message-container h1 {
+font-size: 2rem;
+margin-bottom: 0;
+}
+
+/* Formulaire */
+
+#message-input {
+width: 90%;
+height: 200px;
+margin-bottom: 10px;
+padding: 10px;
+border: 1px solid #ccc;
+resize: vertical;
+}
+
+/* Send Button */
+#send-button {
+background-color: #7880c5;
+color: white;
+padding: 10px 20px;
+border: none;
+cursor: pointer;
+transition: background-color 0.3s;
+}
+
+#form {
+width: 20%;
+height: 12px;
+margin-bottom: 10px;
+padding: 10px;
+border: 1px solid #ccc;
+resize: none;
+}
+
+
+#send-button:hover {
+background-color: #5960a5;
+}
+  
+  
+  
+  
+  
+  
